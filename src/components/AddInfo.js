@@ -1,15 +1,16 @@
 import { BsFillTrashFill } from "react-icons/bs";
 
-function AddInfo(){
+function AddInfo({appointment}){
     return(
         <li>
             <dl>
-                <dt></dt>
-                <dd>
-                    <dfn></dfn>
+                <dt>{appointment.petName}</dt>
+                <dd className="owner">
+                    <dfn>예약자명: </dfn>
+                    {appointment.ownerName}
                 </dd>
-                <dd className="desc"></dd>
-                <dd className="date"></dd>
+                <dd className="desc">{appointment.aptNotes}</dd>
+                <dd className="date">{appointment.aptDate}</dd>
             </dl>
             <p>
                 <button>

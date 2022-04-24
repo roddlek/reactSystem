@@ -7,6 +7,7 @@ import AddInfo from './components/AddInfo'
 //source
 import { BsFillCalendarCheckFill } from "react-icons/bs";
 import './index.css'
+import appointData from './data.json'
 
 function App() {
   return (
@@ -19,7 +20,14 @@ function App() {
       <Search />
       <div id='list'>
         <ul>
-            <AddInfo />
+          {
+            appointData.map( item => (
+              <AddInfo
+                key={item.id}
+                appointment = {item}
+              />
+            ))
+          }
         </ul>
       </div>
     </article>
