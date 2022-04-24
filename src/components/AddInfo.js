@@ -5,7 +5,9 @@ function AddInfo(){
         <li>
             <dl>
                 <dt></dt>
-                <dd></dd>
+                <dd>
+                    <dfn></dfn>
+                </dd>
                 <dd className="desc"></dd>
                 <dd className="date"></dd>
             </dl>

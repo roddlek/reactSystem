@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 //components
 import AddAppointment from './components/AddAppointment'
 import Search from './components/Search';
+import AddInfo from './components/AddInfo'
 //source
 import { BsFillCalendarCheckFill } from "react-icons/bs";
 import './index.css'
@@ -15,12 +16,12 @@ function App() {
         예약 시스템
       </h3>
       <AddAppointment />
+      <Search />
       <div id='list'>
         <ul>
-          <li>반복문</li>
+            <AddInfo />
         </ul>
       </div>
-      <Search />
     </article>
   );
 }

@@ -31,6 +31,7 @@ function AddAppointment(){
             </ul>
             <p>
                 <button type="submit">제출하기</button>
+                {/* <input type="submit" value="제출하기" ->  /> */}
             </p>
         </div>
     )
