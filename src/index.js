@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 //components
 import AddAppointment from './components/AddAppointment'
+import Search from './components/Search';
 //source
 import { BsFillCalendarCheckFill } from "react-icons/bs";
 import './index.css'
@@ -19,6 +20,7 @@ function App() {
           <li>반복문</li>
         </ul>
       </div>
+      <Search />
     </article>
   );
 }
